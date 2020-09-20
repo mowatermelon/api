@@ -1,0 +1,39 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "用于测试 github 自动构建流程的项目",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint:fix": "npx standard --fix",
+    "lint:js": "standard index.js && standard lib/*.js --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mowatermelon/api.git"
+  },
+  "keywords": [
+    "koa"
+  ],
+  "author": "mowatermelon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mowatermelon/api/issues"
+  },
+  "homepage": "https://github.com/mowatermelon/api#readme",
+  "dependencies": {
+    "koa": "^2.13.0",
+    "koa-router": "^9.4.0",
+    "lowdb": "^1.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:js",
+      "pre-push": "npm run lint:js"
+    }
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "standard": "^14.3.4"
+  }
+}
