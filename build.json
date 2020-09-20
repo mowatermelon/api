@@ -1,5 +1,5 @@
 {
-  "outputDir": "docs",
+  "publicPath": "http://blog.iiwhy.cn/ci/",
   "plugins": [
     [
       "build-plugin-fusion",
