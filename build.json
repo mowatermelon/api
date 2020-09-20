@@ -1,4 +1,5 @@
 {
+  "publicPath": "docs",
   "plugins": [
     [
       "build-plugin-fusion",
