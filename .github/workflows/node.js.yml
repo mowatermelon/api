@@ -19,6 +19,6 @@ jobs:
     - name: Use default Node.js version
       uses: actions/setup-node@v1
     - run: npm i
-    - run: npm run start
+    - run: npm run build
       env:
         CI: true
